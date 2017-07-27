@@ -9,13 +9,15 @@ import HomePage from './routes/Home'
 import LoginPage from './routes/Login'
 import BoardPage from './routes/Board'
 
+import data from './data.json'
+
 class App extends Component {
   render() {
     return (
       <Switch>
         <DefaultLayout exact path='/' component={HomePage} />
         <DefaultLayout path='/login' component={LoginPage} />
-        <DefaultLayout path='/board' component={BoardPage} />
+        <DefaultLayout path='/board' component={BoardPage} appdata={data} />
         <DefaultLayout component={NoMatch} />
       </Switch>
     )

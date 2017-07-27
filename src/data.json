@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "abc",
+      "name": "Paulo",
+      "email": "paulo@code.io"
+    },
+    {
+      "id": "ddd",
+      "name": "Joe",
+      "email": "joe@code.io"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "project1",
+      "description": "A project",
+      "color": "white",
+      "users_id": "abc",
+      "lists": [],
+      "members": []
+    },
+    {
+      "id": "p2",
+      "name": "project2",
+      "description": "A project 2",
+      "color": "lightblue",
+      "users_id": "abc",
+      "lists": [],
+      "members": []
+    },
+    {
+      "id": "p3",
+      "name": "project3",
+      "description": "A project 3",
+      "color": "lightblue",
+      "users_id": "abc",
+      "lists": [],
+      "members": []
+    }
+  ]
+}

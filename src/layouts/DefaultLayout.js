@@ -6,15 +6,13 @@ import Header from '../components/Header'
 class DefaultLayout extends Component {
 
   render() {
-    const { component: Component, ...rest } = this.props
+    const { component: Component, appdata, ...rest } = this.props
 
     return (
       <Route {...rest} render={matchProps => (
         <div className='DefaultLayout'>
           <Header {...matchProps} />
-          <div className="row">
-            <Component {...matchProps} />
-          </div>
+          <Component {...matchProps} appdata={appdata} />
         </div>
       )} />
     )
