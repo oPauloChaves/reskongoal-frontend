@@ -1,6 +1,6 @@
 {
   "name": "reskongoal-frontend",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Describe reskongoal-frontend here",
   "private": true,
   "scripts": {
@@ -12,13 +12,15 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "nwb": "0.18.x"
+    "nwb": "0.18.x",
+    "nwb-sass": "^0.8.1"
   },
-  "author": "",
+  "author": "Paulo Chaves <opaulochaves@gmail.com>",
   "license": "MIT",
   "repository": ""
 }
