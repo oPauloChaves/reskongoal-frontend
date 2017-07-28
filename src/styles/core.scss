@@ -1,6 +1,6 @@
 :global {
   @import '~normalize.css/normalize';
-  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,100,500,900);
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900');
   @import 'base';
 
   *,
@@ -14,13 +14,14 @@
     margin: 0;
     padding: 0;
     background-color: $background;
-    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Titillium Web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
   }
 
   .container {
     max-width: $md-width;
     margin: 0 auto;
+    border: 1px solid goldenrod;
 
     @include modifier('fluid') {
       max-width: 100%;
