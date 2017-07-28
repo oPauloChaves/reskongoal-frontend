@@ -14,7 +14,7 @@
   "projects": [
     {
       "id": "p1",
-      "name": "project1",
+      "name": "project 1",
       "description": "A project",
       "color": "white",
       "users_id": "abc",
@@ -23,7 +23,7 @@
     },
     {
       "id": "p2",
-      "name": "project2",
+      "name": "project 2",
       "description": "A project 2",
       "color": "lightblue",
       "users_id": "abc",
@@ -32,7 +32,25 @@
     },
     {
       "id": "p3",
-      "name": "project3",
+      "name": "project 3",
+      "description": "A project 3",
+      "color": "lightblue",
+      "users_id": "abc",
+      "lists": [],
+      "members": []
+    },
+    {
+      "id": "p4",
+      "name": "project 4",
+      "description": "A project 2",
+      "color": "lightblue",
+      "users_id": "abc",
+      "lists": [],
+      "members": []
+    },
+    {
+      "id": "p5",
+      "name": "project 5",
       "description": "A project 3",
       "color": "lightblue",
       "users_id": "abc",

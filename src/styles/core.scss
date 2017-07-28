@@ -1,9 +1,7 @@
 :global {
-  @import 'base';
-  @import 'devices';
-  @import 'grid';
   @import '~normalize.css/normalize';
   @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,100,500,900);
+  @import 'base';
 
   *,
   *:before,
@@ -18,5 +16,14 @@
     background-color: $background;
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
+  }
+
+  .container {
+    max-width: $md-width;
+    margin: 0 auto;
+
+    @include modifier('fluid') {
+      max-width: 100%;
+    }
   }
 }
