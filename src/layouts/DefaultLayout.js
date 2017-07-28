@@ -11,9 +11,7 @@ class DefaultLayout extends Component {
     return (
       <Route {...rest} render={matchProps => (
         <div>
-          <div className='container'>
-            <Header {...matchProps} />
-          </div>
+          <Header {...matchProps} />
           <div className='container'>
             <Component {...matchProps} appdata={appdata} />
           </div>

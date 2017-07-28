@@ -6,9 +6,7 @@ class Header extends Component {
   render() {
     return (
       <div className={`row ${classes.Header}`}>
-        <div className='col'>Search</div>
-        <div className='col'>Logo</div>
-        <div className='col'>Actions</div>
+        <p><a href="#">Reskongoal</a></p>
       </div>
     )
   }
