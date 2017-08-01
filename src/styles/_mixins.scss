@@ -31,3 +31,7 @@ $lg-width: 75rem;
     @content;
   }
 }
+
+@mixin border-radius($radius: 4px) {
+  border-radius: $radius;
+}

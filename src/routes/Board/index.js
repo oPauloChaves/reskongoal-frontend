@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
-
-const Project = ({ id, name, description, color}) => (
-  <div className='col sm-col--1of4'>
-    <div style={{backgroundColor: color}}>
-      <h3>{`#${id} ${name}`}</h3>
-      <p>{description}</p>
-    </div>
-  </div>
-)
+import { Link } from 'react-router-dom'
+import BoardItem from './BoardItem'
+import classes from './Board.scss'
 
 class BoardPage extends Component {
   render() {
     const { appdata : { projects = [] } } = this.props
 
+    const renderItems = () => projects.map(p => (
+      <div key={p.id} className='col sm-col--1of4'>
+        <Link className={classes.anchor} to={`/projects/${p.id}`}>
+          <BoardItem {...p} classes={classes} />
+        </Link>
+      </div>
+    ))
+
     return (
       <div>
-        <h1>Board Page</h1>
-        <div className='row row--gutters'>
-          {projects.map(p => <Project key={p.id} {...p} />)}
+        <div style={{ padding: '20px' }}>
+          <h1 className={classes.title}>Board Page</h1>
+          <div className='row row--gutters'>
+            {renderItems()}
+          </div>
         </div>
       </div>
     )

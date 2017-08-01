@@ -1,6 +1,16 @@
 @import '../../styles/base';
 
 .Header {
-  background-color: $green;
+  background-color: $primary;
   margin-bottom: 10px;
+  padding: 0 10px;
+  box-shadow: 3px 5px 10px #ccc;
+}
+
+.title {
+  margin: .5rem 0;
+  > a {
+    color: $white;
+    text-decoration: none;
+  }
 }
