@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <div className={`row ${classes.Header}`}>
-        <h1 className={classes.title}><Link to="/">Project</Link></h1>
+        <h1 className={classes.title}><Link to='/'>Project</Link></h1>
       </div>
     )
   }

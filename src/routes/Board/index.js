@@ -5,7 +5,7 @@ import classes from './Board.scss'
 
 class BoardPage extends Component {
   render() {
-    const { appdata : { projects = [] } } = this.props
+    const { appdata: { projects = [] } } = this.props
 
     const renderItems = () => projects.map(p => (
       <div key={p.id} className='col sm-col--1of4'>

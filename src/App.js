@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Switch } from 'react-router-dom'
 
-import Header from './components/Header'
 import NoMatch from './components/NoMatch'
 
 import DefaultLayout from './layouts/DefaultLayout'
